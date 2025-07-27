@@ -1,0 +1,9 @@
+{
+	"name": "Factoryshiv1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a94ca331-6a31-467b-98f3-f8ff7361da94",
+		"tenantId": "c468831b-8725-462e-aba8-1cff019df434"
+	}
+}
