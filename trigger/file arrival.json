@@ -1,0 +1,24 @@
+{
+	"name": "file arrival",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/covid19/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/ac11bc3a-f021-4c70-a2f8-d8f60d440838/resourceGroups/Resource1/providers/Microsoft.Storage/storageAccounts/storageshiv1",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
