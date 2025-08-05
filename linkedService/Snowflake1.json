@@ -1,0 +1,21 @@
+{
+	"name": "Snowflake1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SnowflakeV2",
+		"typeProperties": {
+			"authenticationType": "Basic",
+			"accountIdentifier": "sta97908.east-us-2.azure",
+			"user": "SHIVA",
+			"database": "COVID_PROJECT_DB",
+			"warehouse": "COMPUTE_WH",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDk2NTI4NkFBLTZGQkMtNDg3NC1BMkM2LUU0OUU4NDQ5QzMxQV80M2Q1YWM0NS0zZjliLTQyOTYtOGQ4Yy1hZjQzZWMyYWQwYjciDQp9"
+		},
+		"version": "1.1",
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
