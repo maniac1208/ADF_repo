@@ -1,0 +1,73 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "World_covid_cases_deaths_vaccination_data.csv",
+				"folderPath": "World_covid_cases_deaths_vaccination_data.csv",
+				"fileSystem": "covid19"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "date",
+				"type": "String"
+			},
+			{
+				"name": "total_cases",
+				"type": "String"
+			},
+			{
+				"name": "total_deaths",
+				"type": "String"
+			},
+			{
+				"name": "daily_cases",
+				"type": "String"
+			},
+			{
+				"name": "daily_deaths",
+				"type": "String"
+			},
+			{
+				"name": "fully_vaccinated",
+				"type": "String"
+			},
+			{
+				"name": "total_vaccinations",
+				"type": "String"
+			},
+			{
+				"name": "total_boosters",
+				"type": "String"
+			},
+			{
+				"name": "daily_vaccinations",
+				"type": "String"
+			},
+			{
+				"name": "daily_people_vaccinated",
+				"type": "String"
+			}
+		]
+	}
+}
